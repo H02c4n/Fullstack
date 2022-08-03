@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form ABC</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>ABC Design Program Installation And Sales Contract</h1>
+
+        <form action="">
+
+            <!--CONTRACT APPROVAL-->
+            <div class="confirmation">
+                <fieldset class="scheduler-border">
+                    <legend class="scheduler-border">Contract Approval</legend>
+                    <div><input class="form-check-input" type="checkbox" name="confirm" id="confirn">
+                        <label for="confirm">I accept the accuracy of the following information and accept the
+                            aggrement.</label>
+                    </div>
+                    <div>
+                        <input type="button" value="Save"><input type="reset" value="Reset">
+                    </div>
+                </fieldset>
+            </div>
+
+            <!--PERSONAL INFORMATION-->
+
+            <div class="p-info">
+                <fieldset class="scheduler-border">
+                    <legend class="scheduler-border">Personal Information</legend>
+                    <div class="mb-3 row">
+                        <label for="securityID" class="col-sm-2 col-form-label">Form Security ID</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="securityID" disabled name="securityID"
+                                value="1254-fdr">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="name" class="col-sm-2 col-form-label">Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="name" name="name">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="surname" class="col-sm-2 col-form-label">Surname</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="surname" name="surname">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="age" class="col-sm-2 col-form-label">Age</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="age" name="age">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="email" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="mail" class="form-control" id="email" name="email">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="securityID" class="col-sm-2 col-form-label">Add Picture</label>
+                        <div class="col-sm-10">
+                            <input type="file" class="form-control" id="securityID" name="securityID">
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+            <!--OTHER INFORMATION-->
+
+
+            <div class="other-info">
+                <fieldset class="scheduler-border">
+                    <legend class="scheduler-border">Other Information</legend>
+                    <p class="fs-6 fw-bold">About professional experience</p>
+                    <div class="mb-3 row">
+                        <label for="start-date" class="col-sm-2 col-form-label">Start Date</label>
+                        <div class="col-sm-10">
+                            <input type="date" class="form-control" id="start-date" name="start-date">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="experience" class="col-sm-2 col-form-label">Experience</label>
+                        <div class="col-sm-10">
+                            <div class="row">
+                                <div><input class="form-check-input" type="radio" id="1-5" name="experience"
+                                        value="1-5">
+                                    <label class="form-check-label" for="1-5">1-5 years</label>
+                                </div>
+                                <div><input class="form-check-input" type="radio" id="6-10" name="experience"
+                                        value="6-10">
+                                    <label class="form-check-label" for="6-10">6-10 years</label>
+                                </div>
+                                <div><input class="form-check-input" type="radio" id="11-15" name="experience"
+                                        value="11-15">
+                                    <label class="form-check-label" for="11-15">11-15 years</label>
+                                </div>
+                                <div><input class="form-check-input" type="radio" id="15+" name="experience"
+                                        value="15+">
+                                    <label class="form-check-label" for="15+">15+ years</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="" class="col-sm-2 col-form-label">Programming Languages</label>
+                        <div class="col-sm-10">
+                            <label for="prog-lang"></label>
+                            <select class="form-select" name="prog-lang" id="prog-lang" size="5">
+                                <option value="C#">C#</option>
+                                <option value="C++">C++</option>
+                                <option value="PHP">PHP</option>
+                                <option value="Java">Java</option>
+                                <option value="JavaScript">JavaScript</option>
+                                <option value="R">R</option>
+                                <option value="Python">Python</option>
+                                <option value="Go">Go</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="copyofcontract">
+                <fieldset class="scheduler-border">
+                    <legend class="scheduler-border">Copy of the Contract</legend>
+                    <textarea class="form-control"
+                        name="copyofcontract">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga debitis doloribus beatae omnis dignissimos sequi nisi soluta repellat fugit odio saepe libero quas delectus a ad accusamus, optio fugiat aliquid animi quia voluptatibus officia laborum, impedit ullam. Quis accusantium sunt maiores magnam blanditiis similique eum error iusto rem harum asperiores necessitatibus rerum, nostrum dolor consequatur nemo odit eligendi cumque eveniet eos minima officia culpa molestiae autem? Ad, excepturi! Alias mollitia et cum ullam. Veritatis, vitae quod. Quo eveniet doloremque ut, earum voluptate in, tenetur modi eius nesciunt saepe iusto quas.</textarea>
+                </fieldset>
+            </div>
+            <div class="maillist">
+                <fieldset class="scheduler-border">
+                    <legend class="scheduler-border">Mail List</legend>
+                </fieldset>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
