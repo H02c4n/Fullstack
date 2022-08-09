@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+
+<body>
+
+    <div id="exercise">
+        <p> {{ name }} {{ age }}</p>
+        <p>{{ age * 5 }}</p>
+        <p> {{ randomNumber()}}</p>
+        <img v-bind:src="image" height="50">
+        <div>
+            <input type="text" v-bind:value="name">
+        </div>
+    </div>
+
+
+
+    <script>
+        new Vue({
+            el: "#exercise",
+            data: {
+                name: "Halil ÖZCAN",
+                age: 35,
+                image: "https://spaceplace.nasa.gov/templates/featured/sun/sunburn300.png"
+            },
+            methods: {
+                randomNumber: function () {
+                    return Math.random() * 1;
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+body {
+  background-color: aqua;
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
