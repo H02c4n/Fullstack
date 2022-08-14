@@ -24,6 +24,11 @@
     </div>
 
 
+    <!--
+        v-on:click ==> @click
+        v-bind:href ==> :href
+     -->
+
 
     <script>
         new Vue({
@@ -43,8 +48,16 @@
                 output: function () {
                     return this.counter > 10 ? "10'dn buyuk" : "10'dan kucuk";
                 }
+            },
+            watch: {
+                counter: function (value) {
+                    vm = this;
+                    setTimeout(function () {
+                        vm.counter = 0;
+                    }, 1500);
+                }
             }
-        });
+        })
     </script>
 </body>
 

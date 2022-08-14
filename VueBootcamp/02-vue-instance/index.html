@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+
+
+    <div id="app">
+
+        <h1> {{ title }} </h1>
+        <p> {{desc}} </p>
+        <a :target="google.target" :href="google.url" :alt="google.alt"> {{ google.title }} </a>
+
+        <br><br>
+        <button @click="changeTitle('First Button')"> Change Title 1</button>
+        <button @click="changeTitle('Second Button')">Change Title 2</button>
+
+        <div class="box" @mousemove="updateCoords('mouseMove', $event)" @click="changeTitle('Box uzerinden')"></div>
+        <span> {{ coords.x }}, {{ coords.y }} </span>
+
+    </div>
+
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
