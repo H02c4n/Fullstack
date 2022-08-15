@@ -12,8 +12,19 @@
 
 <body>
 
-    <div id="app">
-        <h1>Reactivity Example</h1>
+    <div id="app" class="container">
+        <div class="row mt-5">
+            <div class="col-4 offset-4 p-2 card">
+                <input class="mb-2" type="text" v-model="search">
+                <button class="btn btn-sm btn-primary">Search</button>
+                <pre>
+                    {{ itemList }}
+                </pre>
+                <pre>
+                    {{ filteredList }}
+                </pre>
+            </div>
+        </div>
     </div>
 
 
