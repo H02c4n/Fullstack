@@ -1,0 +1,47 @@
+/* .navbar ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 10px;
+  background-color: gray;
+  padding: 2px 4px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar ul li:hover {
+  background-color: lightgreen;
+  cursor: pointer;
+}
+
+.navbar ul li:hover a {
+  color: rgb(17, 0, 255);
+}
+
+.navbar2 .list {
+  display: none;
+}
+
+.navbar2:hover .list {
+  display: block;
+} */
+
+nav {
+  height: 80px;
+  background-image: linear-gradient(to right, wheat, green);
+}
+
+.sign {
+  float: right;
+  line-height: 70px;
+  margin-right: 20px;
+  color: #fff;
+}
+
+.sign a {
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}

@@ -1,0 +1,28 @@
+/*?Combinators*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.kutu {
+  background-color: aqua;
+}
+
+.kutu:hover h1 {
+  background-color: blue;
+}
+
+input[type="checkbox"]:checked + label {
+  background-color: blueviolet;
+}
+
+h3 {
+  margin: 8rem;
+  border: 2px solid green;
+  outline: 1px solid blue;
+  outline-offset: 28px;
+  border-radius: 5px;
+  outline-width: 30px;
+}

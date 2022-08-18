@@ -1,0 +1,87 @@
+.yazi {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem auto;
+  width: 50vw;
+}
+
+/************ ROTATE **************/
+
+.yazi1 {
+  background-color: greenyellow;
+  transform: rotateX(180deg);
+}
+.yazi2 {
+  background-color: tomato;
+  transform: rotateY(180deg);
+}
+.yazi3 {
+  background-color: hotpink;
+  transform: rotate(-45deg);
+}
+/*************** SCALE ************/
+.yazi4 {
+  background-color: indianred;
+}
+
+.yazi4:hover {
+  transform: scaleX(1.5) scaleY(3);
+}
+
+.yazi5 {
+  background-color: fuchsia;
+  transition: background-color ease-in-out 1s;
+}
+
+.yazi5:hover {
+  background-color: blue;
+}
+
+/*************** TRANSLATE - TRANSITION ************/
+
+.translate {
+  background-color: gold;
+  font-weight: 800;
+  font-size: 1.1rem;
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  transition: background-color 1s, transform 1s ease;
+}
+
+.x:hover {
+  transform: translateX(150px) rotate(720deg) scale(10%, 10%);
+  background-color: red;
+}
+
+.y:hover {
+  transform: translateY(-50px);
+}
+
+.xy:hover {
+  transform: translate(50px, 50px);
+}
+
+.btn-div {
+  text-align: center;
+}
+
+.btn {
+  padding: 1rem;
+  width: 7rem;
+  background-color: goldenrod;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  transition: background-color 1s, color 0.5s;
+}
+
+.btn:hover {
+  background-color: gold;
+  color: purple;
+}
+
+.btn:active {
+  transform: scale(96%);
+  outline: 2px solid goldenrod;
+}
